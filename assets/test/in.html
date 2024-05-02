@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sundanese Translator</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <h1>Sundanese Translator</h1>
+        <label for="english-input">Input: </label>
+        <input type="text" id="english-input">
+        <button id="translate-btn">Translate</button>
+        <br>
+        <label for="sundanese-output">Output: </label>
+        <span id="sundanese-output"></span>
+
+        <script>
+            $('#translate-btn').click(function(){
+                let englishText = $('#english-input').val();
+                $.get(`https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=su&dt=t&q=${encodeURIComponent(englishText)}`, function(data){
+                    console.log(data);
+                    let sundaneseText = data[0][0][0];
+                    $('#sundanese-output').text(sundaneseText);
+                });
+            });
+        </script>
+    </body>
+</html>
+
