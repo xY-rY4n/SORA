@@ -21,3 +21,4 @@ https://86681gpr-3000.asse.devtunnels.ms
 https://prod.liveshare.vsengsaas.visualstudio.com/join?43A9D2E74B1387BB93EEA7A3778101C5D270
 
 # To-do stuffs
+Github Pages being stupid
