@@ -14,7 +14,7 @@
 
     <body>
         <div class="vidbg">
-            <video class="actuallyvideo" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+            <video id="actuallyvideo" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
                 <source src="./assets/background.mp4" type="video/mp4">
         </div>
         <div style="height:100%;">
@@ -24,7 +24,7 @@
                     <h3 style="margin:0px; margin-left:20px; height: 22px;">Sundanese Online Repository Archive</h3>
                     <h5 style="margin:0px; margin-left:20px; height: 22px;">Sebuah project yang dibuat oleh 3 orang</h5>
                 </div>
-
+                <img id="darkmodeswitch" src="./assets/dark-mode.png" height="40px" onclick="switchTheme();">
             </div>
             <div class="actual-body">
                 <h1 style="margin: 0px; margin-top: 20px; margin-bottom: 20px; padding: 0px; height: 0px; text-align: center;">Penerjemah Aksara Sunda</h1><br>
@@ -37,6 +37,8 @@
                 <textarea name="SundaTextBox" id="SundaText" rows="5" onkeyup="writeLatin();setbg('SundaText')"
                     onfocus="setbg('SundaText');" onblur="writeLatin();setbg('SundaText')"
                     placeholder="Keluaran teks aksara sunda disini..."></textarea>
+            </div>
+        </div>
     </body>
 
 </html>

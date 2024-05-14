@@ -421,3 +421,13 @@ function writeSunda() {
 function setbg(id, color) {
   document.getElementById(id).style.background = color;
 }
+
+var light = true;
+function switchTheme(){
+	if (light){
+		document.getElementById("actuallyvideo").classList.add("hideme");
+	} else {
+		document.getElementById("actuallyvideo").classList.remove("hideme");
+	}
+	light = !light;
+}

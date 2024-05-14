@@ -71,13 +71,28 @@ textarea:focus, input:focus{
     left:-5px;
 }
 
-.actuallyvideo {
+#actuallyvideo {
     width: calc(100% + 50px);
     height:calc(100% + 50px);
     top:-25px;
     left:-25px;
     object-fit: cover;
 }
+
+.hideme {
+    display: none;
+}
+
+#darkmodeswitch {
+    margin-top: auto; margin-bottom: auto; margin-left: auto;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+#lightmodeswitch {
+    margin-top: auto; margin-bottom: auto; margin-left: auto;
+}
+
 
 p {
     font-size: 16px;
