@@ -70,8 +70,26 @@ textarea:focus, input:focus{
     top:-25px;
     left:-5px;
 }
+.vidbg1 {
+    position: fixed;
+    z-index: -100;
+    width: calc(100% + 50px);
+    height:calc(100% + 50px);
+    top:-25px;
+    left:-5px;
+}
 
 #actuallyvideo {
+    position: fixed;
+    width: calc(100% + 50px);
+    height:calc(100% + 50px);
+    top:-25px;
+    left:-25px;
+    object-fit: cover;
+}
+
+#actuallyvideo1 {
+    position: fixed;
     width: calc(100% + 50px);
     height:calc(100% + 50px);
     top:-25px;

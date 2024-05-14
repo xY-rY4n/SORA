@@ -426,8 +426,11 @@ var light = true;
 function switchTheme(){
 	if (light){
 		document.getElementById("actuallyvideo").classList.add("hideme");
+		document.getElementById("actuallyvideo1").classList.remove("hideme");
 	} else {
 		document.getElementById("actuallyvideo").classList.remove("hideme");
+		document.getElementById("actuallyvideo1").classList.add("hideme");
 	}
 	light = !light;
 }
+switchTheme();
