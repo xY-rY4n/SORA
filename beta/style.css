@@ -1,0 +1,83 @@
+@font-face {
+    font-family: noto-sunda;
+    src: url("./assets/NotoSansSundanese-Regular.ttf");
+}
+
+html {
+    font-family: noto-sunda;
+    background-color: black;
+    color: white;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+html, body {
+    padding:0px;
+    margin:0px;
+    height:100%;
+    width:100%;
+}
+
+textarea {
+    backdrop-filter: blur(3px);
+    font-family: noto-sunda;
+    border-radius: 15px;
+    padding: 10px;
+    outline: none;
+    border: 1px gray solid;
+    background-color: rgba(0, 0, 0, 0.377);
+    color: #ffffff;
+    resize: none;
+    width: 100%;
+    font-size: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+textarea::placeholder {
+    color: lightgray
+}
+
+textarea:focus, input:focus{
+    background-color: rgba(105, 105, 105, 0.3);
+    outline: none;
+    border: 1px white solid;
+    -moz-appearance:none;
+}
+
+.header {
+    background-color: rgba(105, 105, 105, 0.3);
+    border-bottom: 1px gray solid;
+    border-radius: 0px 0px 25px 25px;
+    padding: 5px;
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 70px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 8px 0 rgba(24, 24, 24, 0.5)
+}
+
+.actual-body {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.vidbg {
+    position: fixed;
+    z-index: -100;
+    width: calc(100% + 50px);
+    height:calc(100% + 50px);
+    top:-25px;
+    left:-5px;
+}
+
+.actuallyvideo {
+    width: calc(100% + 50px);
+    height:calc(100% + 50px);
+    top:-25px;
+    left:-25px;
+    object-fit: cover;
+}
+
+p {
+    font-size: 16px;
+}

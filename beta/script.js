@@ -464,10 +464,3 @@ function ifEnter2(field,event) {
 		return false;
 	} else return true;
 }
-
-//it worked. for god sake
-//also, to try it, maybe you can create new window of vscode then copy the code
-// :(
-    // just try to use it bro
-    // ok
-    // bro atleast save everything first 😭 i downloaded the old version DAWG
